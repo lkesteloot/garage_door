@@ -1,0 +1,23 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.door-open {
+    padding: 10px 20px;
+    background-color: #C44;
+    color: white;
+}
+
+.song-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.song-cover {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}

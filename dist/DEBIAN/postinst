@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Exit on error.
+set -e
+
+if [ "$1" == configure ]; then
+    # Make log directory.
+    mkdir -p /var/log/garage
+
+    # Make database directory.
+    mkdir -p /var/opt/garage
+
+    # Start the app.
+    initctl start garage
+fi

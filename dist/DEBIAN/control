@@ -1,0 +1,8 @@
+Package: garage
+Version: 1.0
+Maintainer: Lawrence Kesteloot <lk@teamten.com>
+Description: Website to monitor and control the garage door
+Architecture: all
+Priority: optional
+Section: admin
+Depends: python, upstart, python-dev, python-rpi.gpio, python-tornado, sqlite3

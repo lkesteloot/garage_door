@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Garage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ static_url("main.css") }}"/>
+    </head>
+    <body>
+        <p class="door-{{ "open" if isOpen else "closed" }}">The door has been {{ "open" if isOpen else "closed" }} for {{ howLongString }}.</p>
+
+        {% if songName %}
+        <p class="song-name">{{ songName }}</p>
+        <img class="song-cover" src="{{ songUrl }}">
+        {% end if %}
+
+        <ul>
+        {% for message, created_at in recentEvents %}
+            <li>{{ created_at }}: {{ message }}</li>
+        {% end for %}
+        </ul>
+    </body>
+</html>
+

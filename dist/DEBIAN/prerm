@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Exit on error.
+set -e
+
+# Stop the app. Don't fail the script if this fails.
+initctl stop garage || true
